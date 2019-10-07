@@ -83,7 +83,7 @@ public class DownloadInfoActivity extends AppCompatActivity {
 
                 try {
                     ByteArrayOutputStream bos = new ByteArrayOutputStream();
-                    byte[] buffer = new byte[1024];
+                    byte[] buffer = new byte[4096];
 
                     while (input.read(buffer) != -1) {
                         bos.write(buffer);
